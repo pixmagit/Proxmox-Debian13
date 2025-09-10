@@ -3,7 +3,7 @@
 # Proxmox Setup - Debian 13
 # by: PixmA
 
-cd /pve_deb13
+cd /Proxmox-Debian13
 
 # Load configs files // Carregar os arquivos de configuração
 source ./configs/colors.conf
@@ -34,7 +34,7 @@ remove_start_script()
         echo -e "${blue}Removed profile configuration for user:${cyan} $(basename "$user_home").${normal}"
 
         # Remove the lines added to /root/.bashrc
-        sed -i '/# Execute script after login/,/\/pve_deb13\/scripts\/install_proxmox-2.sh/d' /root/.bashrc
+        sed -i '/# Execute script after login/,/\/Proxmox-Debian13\/scripts\/install_proxmox-2.sh/d' /root/.bashrc
         echo -e "${blue}Removed automatic script configuration in /root/.bashrc.${normal}"
     done
 }
@@ -49,7 +49,7 @@ configure_bridge()
         if [ -f "$PROFILE_FILE" ]; then
             # Add the script execution line at the end of the file
             echo -e "\n# Run script after login" >> "$PROFILE_FILE"
-            echo "/pve_deb13/scripts/configure_bridge.sh" >> "$PROFILE_FILE"
+            echo "/Proxmox-Debian13/scripts/configure_bridge.sh" >> "$PROFILE_FILE"
 
             echo "Automatic configuration completed for user: $(basename "$user_home")."
         fi
@@ -57,7 +57,7 @@ configure_bridge()
 
     # Add the following lines at the end of the /root/.bashrc file
     echo -e "\n# Run script after login" >> /root/.bashrc
-    echo "/pve_deb13/scripts/configure_bridge.sh" >> /root/.bashrc
+    echo "/Proxmox-Debian13/scripts/configure_bridge.sh" >> /root/.bashrc
 
     echo "Automatic configuration completed for the root user."
 }
