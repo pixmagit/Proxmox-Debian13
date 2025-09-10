@@ -23,11 +23,11 @@
 
 Склонируйте репозиторий на вашу систему Debian 13:
             
-            git clone https://github.com/pixmagit/pve_deb13.git
+            git clone https://github.com/pixmagit/Proxmox-Debian13.git
 
 Перейдите в загруженную папку с помощью команды:
             
-            cd /pve_deb13
+            cd /Proxmox-Debian13
 
 Предоставьте разрешение на выполнение установщику:
             
