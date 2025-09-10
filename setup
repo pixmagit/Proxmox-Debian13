@@ -56,7 +56,7 @@ super_user()
 welcome()
 {
     # Welcome with Style
-    echo -e "${cyan}            Script developed by: \e[1;92mhttps://github.com/mathewalves${normal}." && sleep 0.5
+    echo -e "${cyan}            Script developed by: \e[1;92mhttps://github.com/pixmagit${normal}." && sleep 0.5
     echo ""
     echo ""
     echo -e "${cyan} --> Welcome to the Proxmox Installation Script on Debian 13 ~~${default}" && sleep 0.5
@@ -71,7 +71,7 @@ welcome()
 bem_vindo()
 {
     # Bem-vindo com estilo
-    echo -e "${cyan}            Script desenvolvido por: \e[1;92mhttps://github.com/mathewalves${default}." && sleep 0.5
+    echo -e "${cyan}            Script desenvolvido por: \e[1;92mhttps://github.com/pixmagit${default}." && sleep 0.5
     echo ""
     echo ""
     echo -e "${cyan} --> Bem-vindo ao Script de Instalação do Proxmox no Debian 13 ~~${default}" && sleep 0.5
