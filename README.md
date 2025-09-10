@@ -33,7 +33,7 @@ Usage Instructions
 bash
 
 # With git already installed on your machine, clone the repository
-git clone https://github.com/mathewalves/Proxmox-Debian13.git
+git clone https://github.com/pixmagit/pve_deb13.git
 
 # Access the downloaded folder with the 'cd' command
 cd /Proxmox-Debian13
