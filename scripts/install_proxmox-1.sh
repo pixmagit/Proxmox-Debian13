@@ -3,7 +3,7 @@
 # Proxmox Setup - Debian 13
 # by: PixmA
 
-cd /Proxmox-Debian13
+cd /pve_deb13
 
 # Load configs files // Carregar os arquivos de configuração
 source ./configs/colors.conf
@@ -301,7 +301,7 @@ reboot_setup()
             # Add the script execution line at the end of the file
             echo "" >> "$PROFILE_FILE"
             echo "# Execute script after login" >> "$PROFILE_FILE"
-            echo "/Proxmox-Debian13/scripts/install_proxmox-2.sh" >> "$PROFILE_FILE"
+            echo "/pve_deb13/scripts/install_proxmox-2.sh" >> "$PROFILE_FILE"
             echo "" >> "$PROFILE_FILE"
 
             echo "Automatic configuration completed for user: $(basename "$user_home")."
@@ -311,7 +311,7 @@ reboot_setup()
     # Add the following lines at the end of the /root/.bashrc file
     echo "" >> /root/.bashrc
     echo "# Execute script after login" >> /root/.bashrc
-    echo "/Proxmox-Debian13/scripts/install_proxmox-2.sh" >> /root/.bashrc
+    echo "/pve_deb13/scripts/install_proxmox-2.sh" >> /root/.bashrc
     echo "" >> /root/.bashrc
 
     echo "Automatic configuration completed for the root user."
